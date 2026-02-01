@@ -2,6 +2,8 @@
 
 This project performs real-time sentiment analysis on text data (such as tweets, chat messages, or live input) using Natural Language Processing (NLP) and Machine Learning. The model classifies text into positive, negative, or neutral sentiments.
 
+---
+
 🚀 Features
 
 Real-time text sentiment prediction
@@ -14,26 +16,47 @@ Integration-ready with Jenkins, Ansible, Terraform, and AWS
 
 REST API endpoint for prediction (optional: using Flask or FastAPI)
 
+---
+
 🧩 Project Structure
 sentiment-analysis/
 │
+
 ├── data/                     # Training & testing datasets
+
 ├── models/                   # Saved ML model files
+
 ├── notebooks/                # Jupyter/Colab training notebooks
+
 ├── src/
+
 │   ├── preprocess.py         # Data cleaning and tokenization
+
 │   ├── train_model.py        # Model training script
+
 │   ├── predict.py            # Model inference script
+
 │   ├── utils.py              # Helper functions
+
 │   └── app.py                # Flask/FastAPI app for live prediction
+
 │
+
 ├── requirements.txt          # Python dependencies
+
 ├── Dockerfile                # For containerization
+
 ├── Jenkinsfile               # For CI/CD pipeline setup
+
 ├── terraform/                # Infrastructure as Code setup for AWS
+
 ├── ansible/                  # Configuration management scripts
+
 ├── README.md                 # Project documentation (this file)
+
 └── LICENSE
+
+---
 
 ⚙️ Installation
 1️⃣ Clone the Repository
@@ -47,6 +70,8 @@ venv\Scripts\activate      # For Windows
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
+
+---
 
 🧠 Model Training
 
@@ -65,6 +90,8 @@ Trains a logistic regression or deep learning model
 
 Saves the trained model in models/
 
+---
+
 🔍 Run Real-Time Sentiment Prediction
 
 For real-time text prediction (from terminal):
@@ -77,6 +104,8 @@ Example:
 Enter a sentence: I love this product!
 Predicted Sentiment: Positive 😊
 
+---
+
 🌐 Run as a Web App (Optional)
 
 If you’re using Flask:
@@ -88,12 +117,16 @@ Access the app at:
 
 http://localhost:5000
 
+---
+
 🐳 Run with Docker
 
 Build and run the Docker container:
 
 docker build -t sentiment-analysis .
 docker run -p 5000:5000 sentiment-analysis
+
+---
 
 ☁️ CI/CD & Infrastructure (Optional)
 Jenkins
@@ -108,6 +141,8 @@ Terraform
 
 Used to provision AWS infrastructure (EC2, S3, IAM roles, etc.)
 
+---
+
 📊 Tech Stack
 Category	Technology
 Language	Python
@@ -116,11 +151,15 @@ NLP	NLTK, spaCy, HuggingFace Transformers
 Web Framework	Flask / FastAPI
 DevOps Tools	Jenkins, Ansible, Terraform, Docker
 Cloud	AWS EC2, S3, ECR
+---
 🧪 Example Predictions
 Text	Predicted Sentiment
 “I absolutely loved it!”	Positive
 “It was okay, nothing special.”	Neutral
 “I hate this experience.”	Negative
+
+---
+
 👨‍💻 Author
 
 Adarsh Thakur
