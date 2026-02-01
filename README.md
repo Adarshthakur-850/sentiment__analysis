@@ -151,7 +151,9 @@ NLP	NLTK, spaCy, HuggingFace Transformers
 Web Framework	Flask / FastAPI
 DevOps Tools	Jenkins, Ansible, Terraform, Docker
 Cloud	AWS EC2, S3, ECR
+
 ---
+
 🧪 Example Predictions
 Text	Predicted Sentiment
 “I absolutely loved it!”	Positive
